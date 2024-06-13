@@ -1,0 +1,16 @@
+Notes:
+
+- generateQuestions [trivia/action.ts] isn't working[Done]
+- Find a way to convert Promise<QuestionInterface> into QuestionInterface[Done]
+- Pass the trivia questions from trivia/page.tsx to @/components/trivia-card.tsx[Done]
+
+- Give an option to the user to view their answers and give them the right answer.
+ [Bug] - Showing wrong selected answers/ Showing wrong values.
+
+Side Notes:
+- Load a skeleton when the questions are loading, use the link below as reference[Done]
+ - https://ui.shadcn.com/docs/components/skeleton
+
+Keep in Mind:
+- Allow the user to choose the number of questions
+- Let the user select difficulty level [easy, intermediate, expert]
