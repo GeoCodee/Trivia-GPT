@@ -65,7 +65,7 @@ export function TriviaCard(props: { values: QuestionInterface | null }) {
 
     incrementResults();
 
-    if (activeQuestion != triviaQuestionsQuantity) {
+    if (activeQuestion != triviaQuestionsQuantity - 1) {
       setActiveQuestion(activeQuestion + 1);
     } else {
       setActiveQuestion(0);
