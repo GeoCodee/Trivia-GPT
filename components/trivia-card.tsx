@@ -29,7 +29,9 @@ export function TriviaCard(props: { values: QuestionInterface | null }) {
 
   const triviaQuestions = props.values?.questions;
   const triviaQuestionsQuantity = triviaQuestions ? triviaQuestions.length : 0;
-  const { question, options, correctAnswer } = triviaQuestions[activeQuestion];
+  const { question, options, correctAnswer } = triviaQuestions
+    ? triviaQuestions[activeQuestion]
+    : { question: "", options: [], correctAnswer: "" };
 
   useEffect(() => {
     setQuestionQuantity(triviaQuestionsQuantity);
@@ -63,7 +65,7 @@ export function TriviaCard(props: { values: QuestionInterface | null }) {
 
     incrementResults();
 
-    if (activeQuestion != triviaQuestions.length - 1) {
+    if (activeQuestion != triviaQuestionsQuantity) {
       setActiveQuestion(activeQuestion + 1);
     } else {
       setActiveQuestion(0);
