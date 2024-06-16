@@ -7,6 +7,8 @@ Notes:
 - Give an option to the user to view their answers and give them the right answer.
  [Bug] - Showing wrong selected answers/ Showing wrong values.
 
+- Need to fix overall stat
+
 Side Notes:
 - Load a skeleton when the questions are loading, use the link below as reference[Done]
  - https://ui.shadcn.com/docs/components/skeleton

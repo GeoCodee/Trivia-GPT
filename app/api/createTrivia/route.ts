@@ -63,6 +63,6 @@ export async function GET(req: any) {
     return NextResponse.json(triviaQuestions);
   } catch (error) {
     console.log("[Retrieve Trivia Questions Error]", error);
-    return new NextResponse("Internal Error", { status: 500 });
+    return new NextResponse(`Internal Error: ${error}`, { status: 500 });
   }
 }
