@@ -8,6 +8,7 @@ Notes:
  [Bug] - Showing wrong selected answers/ Showing wrong values.
 
 - Need to fix overall stat
+- Need to fix UI for mobile
 
 Side Notes:
 - Load a skeleton when the questions are loading, use the link below as reference[Done]

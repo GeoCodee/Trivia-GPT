@@ -18,7 +18,9 @@ export function HistoryDialog(props: { triviaHistory: SaveResultInterface }) {
         <Button className="w-full hover:bg-indigo-500">See History</Button>
       </DialogTrigger>
       <DialogContent
-        className={"lg:max-w-screen-lg overflow-y-scroll max-h-screen"}
+        className={
+          "w-10/12 h-4/6 overflow-y-scroll lg:max-w-screen-lg lg:max-h-screen"
+        }
       >
         <DialogHeader>
           <DialogTitle className="font-mono">Trivia History</DialogTitle>
@@ -31,7 +33,7 @@ export function HistoryDialog(props: { triviaHistory: SaveResultInterface }) {
               }
               key={idx}
             >
-              <div className="font-mono p-2">
+              <div className="font-mono p-2 text-left">
                 <div className="flex items-center">
                   <span className="mr-2">
                     Question {item.questionIndex + 1}:{" "}

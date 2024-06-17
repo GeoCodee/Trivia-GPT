@@ -112,7 +112,7 @@ export function TriviaCard(props: { values: QuestionInterface | null }) {
   };
 
   return (
-    <Card className="w-1/2">
+    <Card className="w-full  lg:w-1/2 ">
       {showResult ? (
         <>
           <CardHeader>

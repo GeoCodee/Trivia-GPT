@@ -10,7 +10,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function LoadState() {
   return (
-    <Card className="w-1/2">
+    <Card className="w-full lg:w-1/2">
       <CardHeader>
         <CardDescription className="w-full font-mono text-center text-lg">
           Loading Trivia Questions...
