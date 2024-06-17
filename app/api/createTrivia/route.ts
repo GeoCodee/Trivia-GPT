@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import OpenAI from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 
+export const revalidate = 0;
+// false | 0 | number
+
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
