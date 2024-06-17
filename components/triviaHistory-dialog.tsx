@@ -34,7 +34,7 @@ export function HistoryDialog(props: { triviaHistory: SaveResultInterface }) {
               key={idx}
             >
               <div className="font-mono p-2 text-left">
-                <div className="flex items-center">
+                <div className="flex items-center font-bold">
                   <span className="mr-2">
                     Question {item.questionIndex + 1}:{" "}
                   </span>{" "}
@@ -45,11 +45,15 @@ export function HistoryDialog(props: { triviaHistory: SaveResultInterface }) {
                   )}
                 </div>
                 <br></br>
-                Question: {item.question}
+                <div className="font-mono lg:text-2xl">{item.question}</div>
                 <br></br>
-                Selected Answer: {item.selectedAnswer}
+                <div className="px-4 py-3 bg-gray-200 rounded-lg dark:bg-gray-800">
+                  Selected Answer: {item.selectedAnswer}
+                </div>
                 <br></br>
-                Correct Answer: {item.correctAnswer}
+                <div className="px-4 py-3 bg-gray-200 rounded-lg dark:bg-gray-800">
+                  Correct Answer: {item.correctAnswer}
+                </div>
               </div>
             </div>
           ))}

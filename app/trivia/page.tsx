@@ -58,7 +58,7 @@ export default function TriviaPage() {
           <ModeToggle></ModeToggle>
         </div>
       </header>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="flex min-h-screen flex-col items-center justify-between p-12 lg:p-24">
         {isLoading ? (
           <LoadState></LoadState>
         ) : (
