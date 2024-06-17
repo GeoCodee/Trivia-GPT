@@ -2,8 +2,10 @@ import { NextResponse } from "next/server";
 import OpenAI from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 
-export const revalidate = 0;
+//this line will avoid caching when deployed to vercel
+//value options
 // false | 0 | number
+export const revalidate = 0;
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -34,12 +36,6 @@ const instructionMessage: ChatCompletionMessageParam = {
 
 export async function GET(req: any) {
   try {
-    // const body = await req.json();
-    // const { numOfQuestions } = body;
-
-    // let { numOfQuestions } = req.query;
-    // If numOfQuestions is not provided or not a valid number, default it to 5
-    // const numOfQuestions = 5;
     const numOfQuestions: OpenAI.Chat.ChatCompletionMessageParam = {
       role: "user",
       content: "10",

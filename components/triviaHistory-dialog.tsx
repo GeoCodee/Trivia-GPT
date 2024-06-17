@@ -8,6 +8,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
+import { CircleCheck, CircleX } from "lucide-react";
 
 export function HistoryDialog(props: { triviaHistory: SaveResultInterface }) {
   console.log(props.triviaHistory);
@@ -31,7 +32,16 @@ export function HistoryDialog(props: { triviaHistory: SaveResultInterface }) {
               key={idx}
             >
               <div className="font-mono p-2">
-                <span>Question {item.questionIndex + 1}</span>
+                <div className="flex items-center">
+                  <span className="mr-2">
+                    Question {item.questionIndex + 1}:{" "}
+                  </span>{" "}
+                  {item.isRight ? (
+                    <CircleCheck></CircleCheck>
+                  ) : (
+                    <CircleX></CircleX>
+                  )}
+                </div>
                 <br></br>
                 Question: {item.question}
                 <br></br>
