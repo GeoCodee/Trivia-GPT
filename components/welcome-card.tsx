@@ -7,7 +7,7 @@ export function WelcomeCard() {
   return (
     <Card className="w-full lg:w-1/2">
       <CardHeader>
-        <CardDescription className="p-2 font-mono text-white font-medium w-full text-center text-2xl">
+        <CardDescription className="p-2 font-mono text-black dark:text-white font-medium w-full text-center text-2xl">
           Trivia App, made with NEXT JS. Powered by ChatGPT API
         </CardDescription>
         <div className="text-center ">

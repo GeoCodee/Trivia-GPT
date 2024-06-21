@@ -61,15 +61,15 @@ export async function GET(req: any) {
 
     // return NextResponse.json(triviaQuestions);
 
-    // Set headers to disable caching
-    const headers = {
-      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-      Pragma: "no-cache",
-      Expires: "0",
-    };
+    // // Set headers to disable caching
+    // const headers = {
+    //   "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+    //   Pragma: "no-cache",
+    //   Expires: "0",
+    // };
 
     // Return the JSON response with headers
-    return NextResponse.json(triviaQuestions, { headers });
+    return NextResponse.json(triviaQuestions);
   } catch (error) {
     console.log("[Retrieve Trivia Questions Error]", error);
     return new NextResponse(`Internal Error: ${error}`, { status: 500 });
