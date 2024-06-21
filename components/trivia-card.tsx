@@ -124,7 +124,7 @@ export function TriviaCard(props: { values: QuestionInterface | null }) {
           <CardContent>
             <div className="font-mono font-bold py-2">Results:</div>
             <div className="font-mono font-medium py-4">
-              <h3>Overall: {(result.score / 25) * 100}</h3>
+              {/* <h3>Overall: {(result.score / 25) * 100}</h3> */}
               <p>
                 Total Questions: <span>{questionQuantity}</span>
               </p>
